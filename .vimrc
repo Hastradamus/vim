@@ -35,15 +35,15 @@ nmap <F10> <ESC> :w <ENTER>
 cmap <F10> <ESC> :w <ENTER> i
 cmap <F10> <ESC> :w <ENTER>
 
-colorscheme monokai
+colorscheme molokai
 
 
 au BufReadPost,BufNewFile *.twig colorscheme koehler 
 au BufReadPost,BufNewFile *.css colorscheme slate
 au BufReadPost,BufNewFile *.js colorscheme slate2
 au BufReadPost,BufNewFile *.py colorscheme molokaiyo
-au BufReadPost,BufNewFile *.html colorscheme monokai
-au BufReadPost,BufNewFile *.c colorscheme monokai
-au BufReadPost,BufNewFile *.cpp colorscheme monokai
-au BufReadPost,BufNewFile *.java colorscheme monokai
+au BufReadPost,BufNewFile *.html colorscheme molokai
+au BufReadPost,BufNewFile *.c colorscheme molokai
+au BufReadPost,BufNewFile *.cpp colorscheme molokai
+au BufReadPost,BufNewFile *.java colorscheme molokai
 " au BufReadPost,BufNewFile *.php colorscheme monokai

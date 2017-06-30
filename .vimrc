@@ -14,7 +14,7 @@ set number
 " clang complete options copied from the internet
 
 function DelayScreenClear()
-    sleep 3000m
+    sleep 500m
     echo ''
 endfunction
 

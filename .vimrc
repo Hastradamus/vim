@@ -48,4 +48,8 @@ au BufReadPost,BufNewFile *.html colorscheme monokai
 au BufReadPost,BufNewFile *.c colorscheme monokai
 au BufReadPost,BufNewFile *.cpp colorscheme monokai
 au BufReadPost,BufNewFile *.java colorscheme monokai
+au BufReadPost,BufNewFile *.* colorscheme monokai
+
+"au BufReadPost *.rkt, *.rktl set filetype=scheme
+
 " au BufReadPost,BufNewFile *.php colorscheme monokai

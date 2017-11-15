@@ -38,6 +38,10 @@ map <silent><F12> :wa<CR>:echo'SAVED at: '.strftime('%T')<CR>:call DelayScreenCl
 map! <silent><F12> <ESC>:wa<CR>:echo'SAVED at: '.strftime('%T')<CR>:call DelayScreenClear()<CR>
 map <F7> mzgg=G`z
 
+
+map <silent><C-G> :w<CR>:echo'SAVED at: '.strftime('%T')<CR>:call DelayScreenClear()<CR>
+map! <silent><C-G> <ESC>:w<CR>:echo'SAVED at: '.strftime('%T')<CR>:call DelayScreenClear()<CR>
+
 "mapping to break line in normal mode
 nnoremap <C-N> i<CR><ESC>
 
@@ -48,6 +52,13 @@ inoremap ∆ <Esc>:m .+1<CR>==gi
 inoremap ˚ <Esc>:m .-2<CR>==gi
 vnoremap ∆ :m '>+1<CR>gv=gv
 vnoremap ˚ :m '<-2<CR>gv=gv
+
+nnoremap <A-J> :m .+1<CR>==
+nnoremap <A-K> :m .-2<CR>==
+inoremap <A-J> <Esc>:m .+1<CR>==gi
+inoremap <A-K> <Esc>:m .-2<CR>==gi
+vnoremap <A-J> :m '>+1<CR>gv=gv
+vnoremap <A-K> :m '<-2<CR>gv=gv
 
 
 colorscheme monokai

@@ -74,6 +74,9 @@ au BufReadPost,BufNewFile *.cpp colorscheme monokai
 au BufReadPost,BufNewFile *.java colorscheme monokai
 au BufReadPost,BufNewFile *.* colorscheme monokai
 
+
+"vim markdown preview
+let vim_markdown_preview_github=1
 "au BufReadPost *.rkt, *.rktl set filetype=scheme
 
 " au BufReadPost,BufNewFile *.php colorscheme monokai

@@ -10,6 +10,14 @@ let delimitMate_expand_cr = 2
 let main_sytax='C'
 let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/"
 set number
+set cursorline
+set list
+set listchars=tab:>-,trail:·
+set rtp+=/usr/local/opt/fzf
+
+match ErrorMsg '\%>120v.\+'
+match ErrorMsg '\s\+$'
+
 
 " clang complete options copied from the internet
 
@@ -61,18 +69,20 @@ vnoremap <A-J> :m '>+1<CR>gv=gv
 vnoremap <A-K> :m '<-2<CR>gv=gv
 nnoremap <space> i<space><esc>
 
+"set ruby's tabwidth to 2
+autocmd BufReadPost,BufNewFile *.rb setlocal shiftwidth=2 tabstop=2
 
 colorscheme monokai
 
-au BufReadPost,BufNewFile *.twig colorscheme koehler 
-au BufReadPost,BufNewFile *.css colorscheme slate
-au BufReadPost,BufNewFile *.js colorscheme slate2
-au BufReadPost,BufNewFile *.py colorscheme molokaiyo
-au BufReadPost,BufNewFile *.html colorscheme monokai
-au BufReadPost,BufNewFile *.c colorscheme monokai
-au BufReadPost,BufNewFile *.cpp colorscheme monokai
-au BufReadPost,BufNewFile *.java colorscheme monokai
-au BufReadPost,BufNewFile *.* colorscheme monokai
+"au BufReadPost,BufNewFile *.twig colorscheme koehler
+"au BufReadPost,BufNewFile *.css colorscheme slate
+"au BufReadPost,BufNewFile *.js colorscheme slate2
+"au BufReadPost,BufNewFile *.py colorscheme molokaiyo
+"au BufReadPost,BufNewFile *.html colorscheme monokai
+"au BufReadPost,BufNewFile *.c colorscheme monokai
+"au BufReadPost,BufNewFile *.cpp colorscheme monokai
+"au BufReadPost,BufNewFile *.java colorscheme monokai
+"au BufReadPost,BufNewFile *.* colorscheme monokai
 
 
 "vim markdown preview
